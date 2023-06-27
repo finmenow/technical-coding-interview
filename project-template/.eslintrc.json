@@ -1,0 +1,75 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-prettier",
+    "eslint-plugin-node",
+    "unused-imports"
+  ],
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-empty-function": "error",
+    "prettier/prettier": [
+      "warn"
+    ],
+    "no-warning-comments": [
+      "warn",
+      {
+        "terms": [
+          "fixme",
+          "removeme",
+          "xxx",
+          "@@@"
+        ],
+        "location": "anywhere"
+      }
+    ],
+    "no-process-exit": "off",
+    "no-const-assign": "error",
+    "no-this-before-super": "error",
+    "no-undef": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "node/exports-style": [
+      "error",
+      "module.exports"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "updated": [
+    {
+      "package": "@finmenow/package-update-plugin-jest-to-vitest",
+      "version": "1.0.10",
+      "success": true
+    }
+  ]
+}
