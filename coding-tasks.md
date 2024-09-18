@@ -15,12 +15,8 @@ You may assume the two numbers do not contain any leading zero, except the numbe
    **Explanation:** ```342 + 465 = 807```.
 
 
-4. Design and implement a Least Recently Used (LRU) cache in TypeScript with the following methods: \
-   ```get(key: string): number | null``` – Returns the value of the key if it exists, otherwise returns null. \
-   ```put(key: string, value: number): void``` – Inserts or updates the value of the key. If the cache exceeds its capacity, it should invalidate the least recently used item. The cache should be initialized with a capacity.
- 
-5. Implement an event emitter with the abilities to subscribe, unsubscribe and emit events. 
 
-6. Given a list of tasks and dependencies between them, write a function ```hasCircularDependency(tasks: string[], dependencies: [string, string][])``` that detects whether there is a circular dependency in the task graph. Each task is represented by a string, and each dependency is represented as a tuple ```[taskA, taskB]``` meaning taskA must be completed before taskB.
 
-7. Implement a rate limiter. The rate limiter should allow a maximum of n requests per windowTime milliseconds. The function ```rateLimit(n: number, windowTime: number)``` should return a function that, when called, returns true if the request is allowed and false if the request is rate-limited.
+4. Concurrency Control with Promises
+Question:
+Write a function ```promisePool(limit: number, promises: (() => Promise<any>)[]) : any[] ```that accepts an array of promise-returning functions and ensures that no more than limit promises are executed concurrently. Once a promise is resolved, the next promise in the array should start.
